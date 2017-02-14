@@ -163,6 +163,9 @@ app.post('/question/ask',function(req,res){
 			req.body.petname=req.cookies.petname;
 			req.body.ip = req.ip;
 			req.body.time = data;
+			// 防止跨网站攻击
+			req.body.content = req.body.content.replace(/</g,'&lt;');
+			req.body.content = req.body.content.replace(/</g,'&gt;');
 			//写入文件
 			fs.writeFile(fileName,JSON.stringify(req.body),function(err){
 				if(err){

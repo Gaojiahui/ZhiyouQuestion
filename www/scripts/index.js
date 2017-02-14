@@ -103,9 +103,11 @@ function formatDate(time){
 };
 // 封装一个方法 ： 解析 ip
 function formatIp(ip){
-	if(ip.startsWith('::1')){
-		return 'localhost'
-	}else{
+	// ip.startsWith('::1')
+	var regExp = /::1/ig;
+	if (ip.match(regExp)) {
+		return 'localhost';
+	} else{
 		return ip.substr(7);
 	}
 };
