@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minmum-scale=1.0,user-scalable=no"/>
+		<meta name="author" content="zzh"/>
+		
+		<title>智游问答</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="all.css"/>
+	</head>
+	<body>
+		<!--导航条-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<a href="#" class="navbar-brand">智游教育</a>
+					<div class="navbar-title pull-right text-right">
+						<!--提问图标-->
+						<span id="ask">
+							<span class="glyphicon glyphicon-plus"></span>
+							提问
+						</span>
+						&nbsp;&nbsp;&nbsp;
+						<!--用户图标-->
+						<span id="user" class="dropdown-toggle" data-toggle="dropdown">
+							<span class="glyphicon glyphicon-user"></span>
+							<span></span>
+						</span>
+						<!--下拉菜单-->
+						<ul class="dropdown-menu dropdown-menu-right" style="min-width: 90px;">
+							<li><a href="userInfo.html" class="text-right">个人资料</a></li>
+							<li class="divider"></li>
+							<li id="logout"><a class="text-right">退出登入</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</nav>
+			<!--创建容器，从来放提问问题-->
+		<div class="content questions">
+			
+		</div>
+		
+	</body>
+</html>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="scripts/index.js"></script>

@@ -1,0 +1,32 @@
+
+body{
+	padding-top: 60px;
+}
+.navbar-title{
+	font-size: 18px;
+	text-align: center;
+	color: #9D9D9D;
+	padding: 15px;
+	line-height: 20px;
+}
+.glyphicon{
+	cursor: pointer;
+}
+.media img{
+	width: 64px;
+	height: 64px;
+}
+
+.media[data-question]{
+	cursor: pointer;
+}
+.media .media-object{
+	border-radius: 50%;
+}
+.media .media-footing{
+	color: #888888;
+	padding-top: 10px;
+}
+.media-child{
+	padding-left: 30px;
+}
